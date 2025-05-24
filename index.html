@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="is-preload">
+<head>
+  <meta charset="UTF-8">
+  <title>Abdul Basit – AI/ML Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css"></noscript>
+  
+    <!-- Correctly link JS files -->
+  <script defer src="assets/js/filter.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header>
+    <h1>Abdul Basit</h1>
+    <p>A self-taught AI/ML practitioner building intelligent systems for real-world challenges</p>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+    <!-- Core AI/ML Projects Section -->
+    <section id="projects">
+      <h2>AI &amp; ML Projects</h2>
+
+<!-- Filter Buttons -->
+<div class="filter-buttons">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="chatbot & nlp">Chatbots and NLP</button>
+  <button class="filter-btn" data-filter="cv">Computer Vision</button>
+  <button class="filter-btn" data-filter="fine-tuning">Fine-Tuning</button>
+  <button class="filter-btn" data-filter="rl">Reinforcement Learning</button>
+  <button class="filter-btn" data-filter="generative">Generative AI</button>
+  <button class="filter-btn" data-filter="dashboard">Dashboards & EDA</button>
+  <button class="filter-btn" data-filter="foundation">Foundational Projects</button>
+</div>
+
+ <!-- Featured Projects -->
+<h3 class="visually-hidden">Featured Projects</h3>
+<div class="projects-grid featured">
+  <!-- AI Agent Chatbot -->
+  <article class="project-card core highlight" data-category="chatbot & nlp">
+    <a href="https://github.com/abdulBasit911/AI_Agent_Chatbot" target="_blank" class="project-link">
+      <img src="images/ai_chatbot.png" alt="LangGraph AI Chatbot Interface" loading="lazy">
+      <h4>AI Agent Chatbot</h4>
+      <p><strong>Built with:</strong> LangChain, FastAPI, Streamlit | <strong>Value:</strong> Enterprise-grade LLM comparison tool for customer support automation and multi-model benchmarking.</p>
+      <div class="project-btn">View Project</div>
+    </a>
+  </article>
+
+  <!-- Realtime Face Blurring App -->
+  <article class="project-card core highlight" data-category="cv">
+    <a href="https://github.com/abdulBasit911/Realtime-Face-blurring-App" target="_blank" class="project-link">
+      <img src="images/img_blur.png" alt="Face Blurring in Action" loading="lazy">
+      <h4>Realtime Face Blurring App</h4>
+      <p><strong>Built with:</strong> OpenCV, MediaPipe, NumPy | <strong>Value:</strong> Privacy-preserving solution for anonymizing faces in surveillance or compliance with data protection regulations.</p>
+      <div class="project-btn">View Project</div>
+    </a>
+  </article>
+
+  <!-- Financial News Analyzer -->
+  <article class="project-card core highlight" data-category="chatbot & nlp">
+    <a href="https://github.com/abdulBasit911/Financial-News-Analysis-System" target="_blank" class="project-link">
+      <img src="images/webscrap,nlp,sentimentnews.png" alt="Financial News Analyzer Dashboard" loading="lazy">
+      <h4>Financial News Analyzer</h4>
+      <p><strong>Built with:</strong> BART (summarization), RoBERTa (sentiment), RSS scraping | <strong>Value:</strong> Automates market trend tracking and brand sentiment analysis for investment or PR strategies.</p>
+      <div class="project-btn">View Project</div>
+    </a>
+  </article>
+
+  <!-- Self-learning Snake Game AI -->
+  <article class="project-card core highlight" data-category="rl">
+    <a href="https://github.com/abdulBasit911/Self-learning-Snake-Game-AI" target="_blank" class="project-link">
+      <img src="images/snake_ai_game.png" alt="Snake AI Gameplay Preview" loading="lazy">
+      <h4>Self-learning Snake Game AI</h4>
+      <p><strong>Built with:</strong> PyTorch, Q-learning, Experience Replay | <strong>Value:</strong> Demonstrates adaptive systems for logistics optimization, personalized recommendations, or dynamic decision-making in finance.</p>
+      <div class="project-btn">View Project</div>
+    </a>
+  </article>
+</div>
+
+<!-- Other Core Projects -->
+<section id="other-projects">
+  <h3>Other Projects</h3>
+
+  <!-- Two-layer grid with 3 projects each -->
+  <div class="layer-gap">
+    <div class="two-layer-grid">
+      <!-- Order Management Chatbot -->
+      <article class="project-card core" data-category="chatbot & nlp">
+        <a href="https://github.com/abdulBasit911/Order-Management-Chatbot" target="_blank" class="project-link">
+          <img src="images/order_management_chatbot.png" alt="Order Chatbot Architecture" loading="lazy">
+          <h4>Order Management Chatbot</h4>
+          <p><strong>Built with:</strong> Dialogflow, FastAPI, MySQL | <strong>Value:</strong> Integrates conversational AI with transactional systems for scalable customer service automation in foodtech/e-commerce.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+
+      <!-- Anime Face Generator -->
+      <article class="project-card core" data-category="generative">
+        <a href="https://github.com/abdulBasit911/Anime_Generator" target="_blank" class="project-link">
+          <img src="images/anime_generator_project.png" alt="Anime Face GAN Output Examples" loading="lazy">
+          <h4>Anime Face Generator</h4>
+          <p><strong>Built with:</strong> TensorFlow, DCGAN, BatchNorm | <strong>Value:</strong> Generates synthetic media for creative content creation or personalized recommendation systems.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+
+      <!-- Penguin Species Classifier -->
+      <article class="project-card core" data-category="ml">
+        <a href="https://github.com/abdulBasit911/Penguin-Species-Classification-System" target="_blank" class="project-link">
+          <img src="images/penguins_classification.png" alt="Streamlit Penguin Classifier UI" loading="lazy">
+          <h4>Penguin Species Classifier</h4>
+          <p><strong>Built with:</strong> Scikit-learn, Streamlit, Pandas | <strong>Value:</strong> Automates species identification for biodiversity research, conservation planning, or educational platforms.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+    </div>
+  </div>
+
+  <!-- Second layer of projects -->
+  <div class="layer-gap">
+    <div class="two-layer-grid">
+      <!-- DistilBERT Research Paper Classifier -->
+      <article class="project-card core" data-category="fine-tuning">
+        <a href="https://github.com/abdulBasit911/Finetuning-Model-For-Research-Papers-Classification" target="_blank" class="project-link">
+          <img src="images/finetuning_llms.png" alt="DistilBERT Classifier Architecture" loading="lazy">
+          <h4>DistilBERT Research Paper Classifier</h4>
+          <p><strong>Built with:</strong> Hugging Face Transformers, PyTorch | <strong>Value:</strong> Scalable NLP solution for content categorization, research database automation, or domain-specific search systems.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+
+      <!-- Kaggle Survey EDA -->
+      <article class="project-card core" data-category="dashboard">
+        <a href="https://github.com/abdulBasit911/Kaggle-Survey-Dataset-EDA" target="_blank" class="project-link">
+          <img src="images/EDA_with_Python.png" alt="Kaggle EDA Visualizations" loading="lazy">
+          <h4>Kaggle Survey EDA</h4>
+          <p><strong>Built with:</strong> Pandas, Plotly, Statsmodels | <strong>Value:</strong> Actionable insights for workforce planning, diversity gap analysis, and predictive salary benchmarking in tech.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+
+      <!-- Stock Price Analyzer -->
+      <article class="project-card core" data-category="dashboard">
+        <a href="https://github.com/abdulBasit911/Stock-Price-Analyzer-Dashboard" target="_blank" class="project-link">
+          <img src="images/stock_price_app_comparison.png" alt="Stock Price Analyzer Dashboard" loading="lazy">
+          <h4>Stock Price Analyzer</h4>
+          <p><strong>Built with:</strong> Streamlit, yfinance, Plotly | <strong>Value:</strong> User-friendly financial tool for data-driven investment decisions and comparative analysis of tech stocks.</p>
+          <div class="project-btn">View Project</div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- Foundational Projects Section -->
+<section id="foundation">
+  <h2>Foundational Projects</h2>
+
+  <!-- First Row -->
+  <div class="foundation-row">
+    <article class="project-card foundation" data-category="foundation">
+      <a href="https://github.com/abdulBasit911/SQLandPowerBIproject" target="_blank" class="project-link">
+        <img src="images/SQL Sales Report.png" alt="SQL & Power BI Dashboard" loading="lazy">
+        <h4>SQL &amp; Power BI Dashboard</h4>
+        <p>Used SQL for pizza store data cleaning and Power BI for interactive visualization.</p>
+        <div class="project-btn">View Project</div>
+      </a>
+    </article>
+
+    <article class="project-card foundation" data-category="foundation">
+      <a href="https://github.com/abdulBasit911/MySQL-Data-cleaning" target="_blank" class="project-link">
+        <img src="images/MySQL-Logo.png" alt="Python Data Visualization" loading="lazy">
+        <h4>MySQL Data Cleaning</h4>
+        <p>Used advanced MySQL commands for life expectancy dataset cleaning and exploratory analysis.</p>
+        <div class="project-btn">View Project</div>
+      </a>
+    </article>
+  </div>
+
+  <!-- Second Row -->
+  <div class="foundation-row">
+    <article class="project-card foundation" data-category="foundation">
+      <a href="https://github.com/abdulBasit911/Conway-s-Game-of-Life-" target="_blank" class="project-link">
+        <img src="images/Game.png" alt="Game of Life" loading="lazy">
+        <h4>Conway's Game of Life</h4>
+        <p>Implemented John Conway's Game of Life rules using Python programming.</p>
+        <div class="project-btn">View Project</div>
+      </a>
+    </article>
+
+    <article class="project-card foundation" data-category="foundation">
+      <a href="https://github.com/abdulBasit911/Excel-Data-Analysis-Project" target="_blank" class="project-link">
+        <img src="images/MS EXCEL.png" alt="Excel Dashboard" loading="lazy">
+        <h4>Excel Data Dashboard</h4>
+        <p>Used MS Excel to clean road accident data and build an interactive dashboard.</p>
+        <div class="project-btn">View Project</div>
+      </a>
+    </article>
+  </div>
+</section>
+    
+    <!-- Technical Skills Section -->
+    <section id="skills">
+      <h2>Technical Skills</h2>
+      <ul class="skills-list">
+        <li><strong>Machine Learning:</strong> Scikit-learn, PyTorch, LangChain, FastAPI, Transformers</li>
+        <li><strong>NLP &amp; Deep Learning:</strong> Tokenization, Sentiment Analysis, Named Entity Recognition, Vector Similarity Search</li>
+        <li><strong>Generative AI:</strong> LoRA/QLoRA Fine-Tuning, Retrieval-Augmented Pipelines, Multi-Agent Systems</li>
+        <li><strong>Computer Vision:</strong> OpenCV, MediaPipe, Face Detection</li>
+        <li><strong>Deployment:</strong> REST APIs, Docker, AWS, Streamlit</li>
+        <li><strong>Data Tools:</strong> Pandas, NumPy, SQL, Power BI, Tableau</li>
+      </ul>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <section class="contact-info">
+        <h3>Contact</h3>
+        <ul>
+          <li><strong>Location:</strong> Islamabad, Pakistan</li>
+          <li><strong>WhatsApp:</strong> <a href="https://wa.me/923478066711" target="_blank">(+92) 347-8066711</a></li>
+          <li><strong>Email:</strong> <a href="mailto:mrabdulbasit.111996@gmail.com">mrabdulbasit.111996@gmail.com</a></li>
+        </ul>
+      </section>
+      
+    <section class="social-links">
+  <h3>Connect With Me</h3>
+  <ul class="social-icons">
+    <li>
+      <a href="https://www.linkedin.com/in/abdul-basit911 " target="_blank" class="icon fab fa-linkedin-in" aria-label="LinkedIn Profile"></a>
+    </li>
+    <li>
+      <a href="https://github.com/abdulBasit911 " target="_blank" class="icon fab fa-github" aria-label="GitHub Profile"></a>
+    </li>
+  </ul>
+</section>
+    
+    <div class="copyright">
+      <p>&copy; 2025 Abdul Basit. Design: <a href="https://html5up.net " target="_blank">HTML5 UP</a></p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,235 @@
+/* FORCE DARK THEME */
+html, body, body * {
+  background-color: #001f3f !important;
+  color: #ffffff !important;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* HEADER */
+header {
+  text-align: center;
+  padding: 2rem;
+}
+header h1 {
+  font-size: 2.5rem;
+}
+header p {
+  color: #c0c0c0;
+  font-style: italic;
+}
+
+/* FILTER BUTTONS */
+.filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 2rem 0;
+}
+.filter-btn {
+  background-color: #022851;
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.filter-btn.active {
+  background: linear-gradient(45deg, #18bfef, #00c9ff);
+  color: #ffffff;
+}
+
+/* PROJECTS GRID */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.projects-grid.featured {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.projects-grid.other {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/* PROJECT CARD */
+.project-card {
+  background-color: #022851;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+  max-width: 350px;
+  margin: 0 auto;
+}
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+}
+
+/* HIGHLIGHTED PROJECTS */
+.projects-grid.featured .project-card {
+  max-width: 400px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.5);
+}
+
+/* FOUNDATIONAL PROJECTS */
+#foundation {
+  display: block;
+}
+#foundation .foundation-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+#foundation .foundation-row article {
+  flex: 1 1 calc(50% - 1rem);
+}
+#foundation .project-card {
+  opacity: 0.7;
+  filter: grayscale(20%);
+  transition: all 0.3s ease;
+}
+#foundation .project-card:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+}
+#foundation .project-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* SKILLS & FOOTER */
+#skills, footer {
+  background-color: #001f3f !important;
+  color: #ffffff !important;
+  padding: 3rem 2rem;
+}
+#skills ul, footer ul {
+  list-style: disc inside;
+  padding-left: 1rem;
+}
+
+/* TEXT STYLING */
+.project-link {
+  text-decoration: none !important;
+}
+.project-card h4,
+.project-card p {
+  text-decoration: none !important;
+}
+.project-card h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.project-btn {
+  text-decoration: underline !important;
+}
+
+/* RESPONSIVE FIXES */
+@media screen and (max-width: 768px) {
+  .project-card,
+  .project-card.foundation {
+    width: 100%;
+    max-width: 100%;
+  }
+  .foundation-row {
+    flex-direction: column;
+  }
+  .foundation-row article {
+    flex: 1 1 100%;
+  }
+}
+/* Force 2 rows × 3 columns */
+.two-layer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 2rem;
+}
+
+/* Remove max-width from project cards */
+.project-card.core {
+  max-width: 100%; /* Let grid handle sizing */
+  padding: 1.5rem;
+}
+
+/* Standardize image sizing */
+.project-card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+/* Ensure projects are hidden by default when filtered */
+.hidden {
+  display: none !important;
+}
+
+/* Reset display for unfiltered projects */
+.project-card:not(.hidden) {
+  display: block !important;
+}
+/* Social Icons */
+/* Social Icons */
+.social-icons {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-icons li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.social-icons li:last-child {
+  margin-right: 0;
+}
+
+.social-icons a.icon {
+  font-size: 1.5rem;
+  color: #ffffff; /* Matches your dark theme */
+  transition: color 0.3s ease;
+}
+
+.social-icons a.icon:hover {
+  color: #18bfef; /* Accent color from your theme */
+}
+/* For dark themes */
+body.dark-theme .social-icons a.icon {
+  color: #ffffff;
+}
+
+body.dark-theme .social-icons a.icon:hover {
+  color: #18bfef;
+}
+/* Mobile Grid Fix */
+@media screen and (max-width: 768px) {
+  .two-layer-grid {
+    grid-template-columns: 1fr;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+}
+
+/* Enhanced Touch Targets */
+.filter-btn {
+  padding: 1rem 1.5rem;
+  min-height: 48px;
+}
+
+/* Image Fixes */
+#foundation .project-card img {
+  object-fit: contain;
+}
+
+/* Accessibility */
+.filter-btn:focus,
+.project-link:focus {
+  outline: 2px dashed #18bfef;
+  outline-offset: 2px;
+}
